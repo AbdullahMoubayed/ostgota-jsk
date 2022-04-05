@@ -1,35 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*, html, body {
+*,
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #204B45;
-  background-color: #fff;
+  color: #204b45;
+  background: transparent;
 }
 
-* a, html a, body a {
+* a,
+html a,
+body a {
   text-decoration: none;
 }
 
-* h1.hero-title, html h1.hero-title, body h1.hero-title {
+* h1.hero-title,
+html h1.hero-title,
+body h1.hero-title {
   font-size: 3rem;
   font-weight: 700;
 }
 
-* h1, html h1, body h1 {
+* h1,
+html h1,
+body h1 {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-* h2, html h2, body h2 {
+* h2,
+html h2,
+body h2 {
   font-size: 2rem;
   font-weight: 700;
 }
 
-* button, * input[type='submit'], * input[type='button'], html button, html input[type='submit'], html input[type='button'], body button, body input[type='submit'], body input[type='button'] {
+* button,
+* input[type='submit'],
+* input[type='button'],
+html button,
+html input[type='submit'],
+html input[type='button'],
+body button,
+body input[type='submit'],
+body input[type='button'] {
   border: none;
   outline: none;
   cursor: pointer;
@@ -38,11 +56,41 @@
   border-radius: 100rem;
 }
 
+* i::before,
+html i::before,
+body i::before {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: -1.5rem;
+  left: -1.25rem;
+  border-radius: 50%;
+  background-color: #cbf4ee;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1), -webkit-transform 0.45s cubic-bezier(0.34, 2, 0.64, 1);
+  transition: opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1), -webkit-transform 0.45s cubic-bezier(0.34, 2, 0.64, 1);
+  transition: opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1), transform 0.45s cubic-bezier(0.34, 2, 0.64, 1);
+  transition: opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1), transform 0.45s cubic-bezier(0.34, 2, 0.64, 1), -webkit-transform 0.45s cubic-bezier(0.34, 2, 0.64, 1);
+}
+
+* i:hover::before,
+html i:hover::before,
+body i:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 header {
-  background-color: #058875;
-  padding: 1.5rem 0;
+  padding: 2rem 3.5rem;
   position: relative;
   z-index: 1;
+}
+
+header nav {
+  background: transparent;
 }
 
 header nav .nav-wrappar {
@@ -52,14 +100,165 @@ header nav .nav-wrappar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: transparent;
+}
+
+header nav .nav-wrappar input {
+  background-color: #e95e2a;
+  color: #fff;
+}
+
+header nav .nav-wrappar span#nev-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  background: transparent;
+}
+
+header nav .nav-wrappar i {
+  width: 1.5rem;
+  margin-left: 2rem;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+header nav .nav-wrappar i span.icon-bar {
+  content: '';
+  display: block;
+  margin-bottom: 0 !important;
+  width: 100%;
+  height: 3px;
+  background-color: #058875;
+  margin-bottom: 1rem;
+}
+
+header nav .nav-wrappar i span.icon-bar:nth-child(2) {
+  margin-top: 0.55rem;
+}
+
+header nav .nav-wrappar i.active::before {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header nav .nav-wrappar i.active span.icon-bar:nth-child(1) {
+  -webkit-transform: translate(0, 0.36875rem) rotate(45deg);
+          transform: translate(0, 0.36875rem) rotate(45deg);
+}
+
+header nav .nav-wrappar i.active span.icon-bar:nth-child(2) {
+  -webkit-transform: translate(0, -0.36875rem) rotate(-45deg);
+          transform: translate(0, -0.36875rem) rotate(-45deg);
 }
 
 header nav .nav-body {
+  position: absolute;
+  max-width: 50%;
+  min-height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #f5f5f5;
+  padding: 0 5rem;
   display: none;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 5s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: -webkit-transform 5s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 5s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 5s cubic-bezier(0.33, 1, 0.68, 1), -webkit-transform 5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+header nav .nav-body.open {
+  display: block;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header nav .nav-body ul {
+  margin-top: 7rem;
+}
+
+header nav .nav-body ul li {
+  list-style: none;
+  background: inherit;
+  margin-top: 1rem;
+}
+
+header nav .nav-body ul li a,
+header nav .nav-body ul li span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  cursor: pointer;
+}
+
+header nav .nav-body .dropdown-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 'header icon' 'dropdown dropdown';
+  min-width: 13rem;
+  margin-top: 1.5rem;
+}
+
+header nav .nav-body .dropdown-container i.dropdown-icon {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: icon;
+  margin-left: auto;
+}
+
+header nav .nav-body .dropdown-container i.dropdown-icon span.dropdown-bar {
+  content: '';
+  display: block;
+  margin-bottom: 0 !important;
+  width: 100%;
+  height: 3px;
+  background-color: #058875;
+  margin-bottom: 1rem;
+}
+
+header nav .nav-body .dropdown-container i.dropdown-icon span.dropdown-bar:nth-child(1) {
+  -webkit-transform: translate(0, 0.6875rem) rotate(45deg);
+          transform: translate(0, 0.6875rem) rotate(45deg);
+}
+
+header nav .nav-body .dropdown-container i.dropdown-icon span.dropdown-bar:nth-child(2) {
+  -webkit-transform: translate(0, -0.1rem) rotate(-45deg);
+          transform: translate(0, -0.1rem) rotate(-45deg);
+}
+
+header nav .nav-body .dropdown-container .dropdown {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: dropdown;
+  margin-top: 0;
+  display: none;
+}
+
+header nav .nav-body .dropdown-container .dropdown a {
+  font-size: 1.9rem;
+  margin-left: 2.5rem;
+  font-weight: 400;
+  color: #627b77;
 }
 /*# sourceMappingURL=style.css.map */

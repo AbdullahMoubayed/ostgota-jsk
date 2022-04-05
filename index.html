@@ -15,18 +15,21 @@
       <nav>
         <div class="nav-wrappar">
           <h2>LOGO</h2>
-          <input type="button" value="Admin">
-          <i class='list-icon'></i>
+
+          <span id='nev-left'>
+            <input type="button" value="Admin" />
+            <i class="list-icon"> <span class='icon-bar'></span> <span class='icon-bar'></span></i>
+          </span>
         </div>
 
         <!--- Navbar body starts -->
         <div class="nav-body">
           <ul>
             <li><a href="#">Hem</a></li>
-            <li><a href="#">
+            <li class='dropdown-container'>
                 <span>Om</span>
-                <i class="dropdown-icon"></i>
-                <ul class='dropdown'>
+                <i class="dropdown-icon"><span class='dropdown-bar'></span> <span class='dropdown-bar'></span></i>
+                <ul class="dropdown">
                   <li><a href="#">Kontakt</a></li>
                   <li><a href="#">styrmöten</a></li>
                   <li><a href="#">öppettider</a></li>
@@ -34,16 +37,16 @@
                   <li><a href="#">gästbok</a></li>
                   <li><a href="#">säkB</a></li>
                 </ul>
-            </a></li>
-            <li><a href="#">
+            </li>
+            <li class='dropdown-container'>
                 <span>Banor</span>
-                <i class="dropdown-icon"></i>
-                <ul class='dropdown'>
-                  <li><a href="#">inskjutningssbanan</a></li>
-                  <li><a href="#">funktionär</a></li>
-                  <li><a href="#">skjustbaneinstruktion</a></li>
+                <i class="dropdown-icon"><span class='dropdown-bar'></span> <span class='dropdown-bar'></span></i>
+                <ul class="dropdown">
+                  <li><a href="#">none</a></li>
+                  <li><a href="#">hihi</a></li>
+                  <li><a href="#">varför</a></li>
                 </ul>
-            </a></li>
+            </li>
           </ul>
         </div>
         <!-- Navbar body ends -->
@@ -54,18 +57,21 @@
     <!--- Main section starts -->
     <section class="hero">
       <div>
-        <h1 class="hero-title">Östgöta jaktskytte klubben bla bla </h1>
-        <p class="hero-text">Här kan du som älskar att jaga hitta dig själv, lite beskrivning om klubben ska vara här.</p>
+        <h1 class="hero-title">Östgöta jaktskytte klubben bla bla</h1>
+        <p class="hero-text">
+          Här kan du som älskar att jaga hitta dig själv, lite beskrivning om
+          klubben ska vara här.
+        </p>
         <p class="button-header">Nästa Tävling</p>
 
         <form>
           <i></i>
           <p>22-11-15 Fredag</p>
-          <input type="submit" value="GÅ MED">
+          <input type="submit" value="GÅ MED" />
         </form>
       </div>
 
-      <img src="img/hero.jpeg" alt="">
+      <img src="img/hero.jpeg" alt="" />
     </section>
     <!-- Main section ends -->
 
@@ -106,25 +112,37 @@
         <div class="events-item">
           <p class="history">igår</p>
           <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-          <p class="summary">Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats Pantzar som lyckades tredjeplatsen. </p>
+          <p class="summary">
+            Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats
+            Pantzar som lyckades tredjeplatsen.
+          </p>
         </div>
 
         <div class="events-item">
           <p class="history">igår</p>
           <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-          <p class="summary">Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats Pantzar som lyckades tredjeplatsen. </p>
+          <p class="summary">
+            Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats
+            Pantzar som lyckades tredjeplatsen.
+          </p>
         </div>
 
         <div class="events-item">
           <p class="history">igår</p>
           <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-          <p class="summary">Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats Pantzar som lyckades tredjeplatsen. </p>
+          <p class="summary">
+            Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats
+            Pantzar som lyckades tredjeplatsen.
+          </p>
         </div>
 
         <div class="events-item">
           <p class="history">igår</p>
           <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-          <p class="summary">Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats Pantzar som lyckades tredjeplatsen. </p>
+          <p class="summary">
+            Ett stort grattis till Erik Hulén som knep förstaplatsen och Mats
+            Pantzar som lyckades tredjeplatsen.
+          </p>
         </div>
       </div>
     </section>
@@ -132,7 +150,7 @@
 
     <!-- Footer starts -->
     <footer>
-      <div class='footer-up'>
+      <div class="footer-up">
         <div class="main">
           <svg class="logo-footer"></svg>
           <p class="adress">Kvarn 180 9132 Motala</p>
@@ -140,38 +158,44 @@
           <p class="phone">+46 7201 266 96</p>
         </div>
 
-        <li><a href="#">
-          <span>Banor</span>
-          <i class="dropdown-icon"></i>
-          <ul class='dropdown'>
-            <li><a href="#">inskjutningssbanan</a></li>
-            <li><a href="#">funktionär</a></li>
-            <li><a href="#">skjustbaneinstruktion</a></li>
-          </ul>
-        </a></li>
+        <li>
+          <a href="#">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">inskjutningssbanan</a></li>
+              <li><a href="#">funktionär</a></li>
+              <li><a href="#">skjustbaneinstruktion</a></li>
+            </ul>
+          </a>
+        </li>
 
-        <li><a href="#">
-          <span>Banor</span>
-          <i class="dropdown-icon"></i>
-          <ul class='dropdown'>
-            <li><a href="#">inskjutningssbanan</a></li>
-            <li><a href="#">funktionär</a></li>
-            <li><a href="#">skjustbaneinstruktion</a></li>
-          </ul>
-        </a></li>
+        <li>
+          <a href="#">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">inskjutningssbanan</a></li>
+              <li><a href="#">funktionär</a></li>
+              <li><a href="#">skjustbaneinstruktion</a></li>
+            </ul>
+          </a>
+        </li>
 
-        <li><a href="#">
-          <span>Banor</span>
-          <i class="dropdown-icon"></i>
-          <ul class='dropdown'>
-            <li><a href="#">inskjutningssbanan</a></li>
-            <li><a href="#">funktionär</a></li>
-            <li><a href="#">skjustbaneinstruktion</a></li>
-          </ul>
-        </a></li>
+        <li>
+          <a href="#">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">inskjutningssbanan</a></li>
+              <li><a href="#">funktionär</a></li>
+              <li><a href="#">skjustbaneinstruktion</a></li>
+            </ul>
+          </a>
+        </li>
       </div>
 
-      <div class='footer-down'>
+      <div class="footer-down">
         <p class="copyright">© 2022 Östgöta jsk</p>
         <p class="author">Designed & coded with ❤️ by AbdullahM🏓</p>
       </div>
