@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Östgöta jsk</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!--- Navbar starts -->
+    <header>
+      <nav>
+        <div class="nav-wrappar">
+          <a class='logo-wrappar' href="index.html"><img class='logo' src="img/logo.png" alt="Östgöta JSK"></a>
+
+          <span id='nev-left'>
+            <a href="login.html"><input type="button" value="Admin" /></a>
+            <i class="list-icon"> <span class='icon-bar'></span> <span class='icon-bar'></span></i>
+          </span>
+        </div>
+
+        <!--- Navbar body starts -->
+        <div class="nav-body">
+          <ul>
+            <li><a href="#">Hem</a></li>
+            <li class='dropdown-container'>
+                <span> <a href="about.html">Om</a></span>
+                <ion-icon class='dropdown-icon' name="chevron-down-outline"></ion-icon>
+                <ul class="dropdown">
+                  <li><a href="#">Kontakt</a></li>
+                  <li><a href="#">styrmöten</a></li>
+                  <li><a href="#">öppettider</a></li>
+                  <li><a href="#">regler</a></li>
+                  <li><a href="#">gästbok</a></li>
+                  <li><a href="#">säkB</a></li>
+                </ul>
+            </li>
+            <li class='dropdown-container'>
+                <span>Banor</span>
+                <ion-icon class='dropdown-icon' name="chevron-down-outline"></ion-icon>
+                <ul class="dropdown">
+                  <li><a href="#">none</a></li>
+                  <li><a href="#">hihi</a></li>
+                  <li><a href="#">varför</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar body ends -->
+      </nav>
+    </header>
+
+    <!--- Login from -->
+    <section>
+      <form id='login-form' class='auth'>
+        <h2>Administratör</h2>
+        <label for="email">E-post</label>
+        <input type="text" name="email" id="email" class='input'>
+        <div class="err" id="email-err">Email must be a valid address, e.g. me@mydomain.com</div>
+      
+        <label for="pass">Lösenord</label>
+        <input type="text" name="password" id="pass" class='input'>
+        <div class="err" id="pass-err">Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</div>
+      
+        <input type="submit" value="kom igång">
+      
+      </form>
+    </section>
+
+    <!-- Footer starts -->
+    <footer>
+      <div class="footer-up">
+        <div class="main">
+          <h2 class="logo-footer">Östgöta Jaktskytteklubb</h2>
+          <p class="adress">
+            Kvarn 180 <br />
+            9132 Motala
+          </p>
+          <p class="email">info@ostjotajkt.se</p>
+          <p class="phone">+46 7201 266 96</p>
+        </div>
+
+        <li>
+          <a href="#">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">inskjutningssbanan</a></li>
+              <li><a href="#">funktionär</a></li>
+              <li><a href="#">skjustbaneinstruktion</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">inskjutningssbanan</a></li>
+              <li><a href="#">funktionär</a></li>
+              <li><a href="#">skjustbaneinstruktion</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">inskjutningssbanan</a></li>
+              <li><a href="#">funktionär</a></li>
+              <li><a href="#">skjustbaneinstruktion</a></li>
+            </ul>
+          </a>
+        </li>
+      </div>
+
+      <div class="footer-down">
+        <p class="copyright">© 2022 Östgöta jsk</p>
+        <p class="author">
+          Designed & coded with ❤️ by
+          <a href="https://github.com/AbdullahMoubayed"> AbdullahM🏓</a>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="../dist/bundle.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

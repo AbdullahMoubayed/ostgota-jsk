@@ -1,0 +1,37 @@
+section.banor-section {
+  max-width: 70%;
+}
+
+section.banor-section .banor-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+section.banor-section .banor-container .bana {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+section.banor-section .banor-container .bana ion-icon {
+  margin-right: 0.4rem;
+}
+
+section.banor-section .map {
+  margin-top: 1rem;
+}
+
+section.banor-section .banor-info {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+}
+/*# sourceMappingURL=banor.css.map */

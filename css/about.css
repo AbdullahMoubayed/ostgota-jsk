@@ -1,0 +1,121 @@
+section.context {
+  max-width: 78% !important;
+  margin-left: 0 !important;
+}
+
+section.hero {
+  margin-top: 7rem !important;
+}
+
+section.hero .about-hero h1 {
+  margin-top: 0;
+}
+
+section.hero .about-hero .hero-text {
+  max-width: 45rem;
+  line-height: 2.3rem;
+}
+
+section.hero .content {
+  background: #e7fffb !important;
+  padding: 2rem;
+  padding-right: 6rem;
+  border-left: 5px solid #058875;
+}
+
+section.hero .content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+section.hero .content p {
+  margin-top: 0.4rem;
+}
+
+section.hero .content p a {
+  font-size: 1.2rem;
+  color: #058875;
+  text-decoration: underline;
+}
+
+section.meet-section {
+  max-width: 75%;
+}
+
+section.meet-section p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  max-width: 40rem;
+}
+
+section.meet-section .meets-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+section.meet-section .meets-container .meet {
+  background: #f5f5f5;
+  border-radius: 1rem;
+  padding: 1.6rem 2rem;
+}
+
+section.meet-section .meets-container .meet h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+section.meet-section .meets-container .meet span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
+}
+
+section.meet-section .meets-container .meet span p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-left: 0.5rem;
+}
+
+section.member {
+  max-width: 55rem;
+}
+
+section.member p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+section.member p span {
+  color: #e95e2a;
+}
+
+section.stadgar h2 {
+  margin-bottom: 1rem;
+}
+
+section.stadgar p {
+  margin-top: 1rem;
+}
+
+section.stadgar p a {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-decoration: underline;
+}
+
+section.contact {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=about.css.map */

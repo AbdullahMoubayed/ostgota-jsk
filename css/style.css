@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("about.css");
+@import url("regler.css");
+@import url("login.css");
+@import url("banor.css");
+@import url("add.css");
 *,
 html,
 body {
@@ -91,19 +96,48 @@ body {
 
 section {
   padding: 4rem 3.5rem;
+  max-width: 1400px !important;
+  margin: auto;
+}
+
+section ::-webkit-scrollbar {
+  display: none;
+}
+
+section.start {
+  margin-top: 5rem !important;
+}
+
+section.start h1, section.start .img {
+  margin-top: 0 !important;
 }
 
 header {
-  padding: 2rem 3.5rem;
+  max-width: 1400px !important;
+  margin: auto;
+  padding: 1.5rem 3.5rem;
   position: fixed;
   top: 0;
   min-width: 100%;
   z-index: 1;
+  background: transparent;
+}
+
+header.header-scroll {
+  background: #f5f5f5;
 }
 
 header nav {
   background: transparent;
   width: 100%;
+}
+
+header nav ::-webkit-scrollbar {
+  display: none;
+}
+
+header nav .wrappar-nav {
+  display: none;
 }
 
 header nav .nav-wrappar {
@@ -116,9 +150,40 @@ header nav .nav-wrappar {
   background: transparent;
 }
 
-header nav .nav-wrappar input {
-  background-color: #e95e2a;
+header nav .nav-wrappar .logo-wrappar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .nav-wrappar .logo-wrappar img.logo {
+  width: 3rem;
+}
+
+header nav .nav-wrappar #admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 20rem;
+  background: #e95e2a;
+}
+
+header nav .nav-wrappar #admin p,
+header nav .nav-wrappar #admin ion-icon {
+  font-size: 1rem !important;
   color: #fff;
+}
+
+header nav .nav-wrappar #admin p {
+  margin-left: 0.3rem;
 }
 
 header nav .nav-wrappar span#nev-left {
@@ -177,7 +242,7 @@ header nav .nav-body {
   right: 0;
   top: 0;
   z-index: 1;
-  background-color: #f5f5f5;
+  background-color: #058875;
   padding: 0 5rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -194,6 +259,7 @@ header nav .nav-body.open {
 
 header nav .nav-body ul {
   margin-top: 7rem;
+  overflow-y: scroll;
 }
 
 header nav .nav-body ul li {
@@ -210,6 +276,7 @@ header nav .nav-body ul li span {
   -ms-grid-column: 1;
   grid-area: header;
   cursor: pointer;
+  color: #fff;
 }
 
 header nav .nav-body .dropdown-container {
@@ -220,46 +287,25 @@ header nav .nav-body .dropdown-container {
           align-items: center;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: 'header icon' 'dropdown dropdown';
+      grid-template-areas: 'header icon' 'dropdown dropdown';
   min-width: 13rem;
   margin-top: 1.5rem;
+  curser: pointer;
 }
 
-header nav .nav-body .dropdown-container i.dropdown-icon {
-  width: 1rem;
-  height: 1rem;
+header nav .nav-body .dropdown-container .dropdown-icon {
+  font-size: 2rem;
+  color: #fff;
   position: relative;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: icon;
   margin-left: auto;
 }
 
-header nav .nav-body .dropdown-container i.dropdown-icon span.dropdown-bar {
-  content: '';
-  display: block;
-  margin-bottom: 0 !important;
-  width: 100%;
-  height: 3px;
-  background-color: #058875;
-  margin-bottom: 1rem;
-}
-
-header nav .nav-body .dropdown-container i.dropdown-icon span.dropdown-bar:nth-child(1) {
-  -webkit-transform: translate(0, 0.6875rem) rotate(45deg);
-          transform: translate(0, 0.6875rem) rotate(45deg);
-}
-
-header nav .nav-body .dropdown-container i.dropdown-icon span.dropdown-bar:nth-child(2) {
-  -webkit-transform: translate(0, -0.1rem) rotate(-45deg);
-          transform: translate(0, -0.1rem) rotate(-45deg);
-}
-
-header nav .nav-body .dropdown-container i.dropdown-icon.active {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+header nav .nav-body .dropdown-container .dropdown-icon.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 header nav .nav-body .dropdown-container .dropdown {
@@ -279,11 +325,13 @@ header nav .nav-body .dropdown-container .dropdown a {
   font-size: 1.9rem;
   margin-left: 2.5rem;
   font-weight: 400;
-  color: #627b77;
+  color: #fff;
 }
 
 section.hero {
-  margin-top: 5rem;
+  max-width: 1400px !important;
+  margin: auto;
+  margin-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,12 +387,25 @@ section.hero form input {
 
 section.hero .img {
   background-image: url("img/hero.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 40rem;
   height: 30rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 section.news {
+  max-width: 1400px !important;
+  margin: auto;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section.news h2 {
+  margin-left: 3.5rem;
 }
 
 section.news .news-container {
@@ -353,13 +414,23 @@ section.news .news-container {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  overflow-x: scroll;
 }
 
 section.news .news-container .news-item {
   background: #f5f5f5;
   border-radius: 1rem;
   padding: 1.6rem 2rem;
-  max-width: 25%;
+  max-width: 15rem;
+  min-width: 14rem;
+}
+
+section.news .news-container .news-item:nth-child(1) {
+  margin-left: 3.5rem !important;
+}
+
+section.news .news-container .news-item:nth-last-child(1) {
+  margin-right: 3.5rem !important;
 }
 
 section.news .news-container .news-item .history {
@@ -385,6 +456,17 @@ section.news ion-icon {
   right: 5rem;
 }
 
+section.events {
+  max-width: 1400px !important;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section.events h2 {
+  margin-left: 3.5rem;
+}
+
 section.events .events-container {
   margin-top: 2rem;
   position: relative;
@@ -392,13 +474,23 @@ section.events .events-container {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  overflow-x: scroll;
 }
 
 section.events .events-container .events-item {
   background: #f5f5f5;
   border-radius: 1rem;
   padding: 1.6rem 2rem;
-  max-width: 25%;
+  max-width: 16rem;
+  min-width: 16rem;
+}
+
+section.events .events-container .events-item:nth-child(1) {
+  margin-left: 3.5rem !important;
+}
+
+section.events .events-container .events-item:nth-last-child(1) {
+  margin-right: 3.5rem !important;
 }
 
 section.events .events-container .events-item .history {
@@ -425,13 +517,14 @@ section.events ion-icon {
   cursor: pointer;
   position: absolute;
   top: 40%;
-  right: 1.5rem;
+  right: 5rem;
 }
 
 footer {
   background: #f5f5f5;
   padding: 2rem 3.5rem;
   color: #627b77 !important;
+  margin-top: 5rem;
 }
 
 footer .footer-up {
@@ -442,6 +535,8 @@ footer .footer-up {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 2rem;
+  max-width: 1300px !important;
+  margin: auto;
 }
 
 footer .footer-up .main {
@@ -478,7 +573,7 @@ footer .footer-up li {
 
 footer .footer-up li span {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #204b45;
 }
 
@@ -503,7 +598,9 @@ footer .footer-down {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 3rem !important;
+  max-width: 1300px !important;
+  margin: auto;
 }
 
 footer .footer-down p {
@@ -519,5 +616,226 @@ footer .footer-down::before {
   margin-bottom: 1rem;
   position: absolute;
   bottom: 1.5rem;
+}
+
+@media (min-width: 1400px) {
+  nav {
+    max-width: 1400px;
+    margin: auto;
+  }
+  nav .wrappar-nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .wrappar-nav .wrappar-nav-item {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem;
+  }
+  nav .wrappar-nav .wrappar-nav-item:hover {
+    background-color: #d3d3d3;
+  }
+  nav .wrappar-nav .wrappar-nav-item:hover .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .wrappar-nav .dropdown-container {
+    cursor: pointer;
+    position: relative;
+  }
+  nav .wrappar-nav .dropdown-container span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .wrappar-nav .dropdown-container span p {
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+  }
+  nav .wrappar-nav .dropdown-container span ion-icon {
+    font-size: 1.2rem;
+  }
+  nav .wrappar-nav .dropdown {
+    display: none;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 3rem;
+    left: 0;
+    background: #d8d8d8;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  nav .wrappar-nav .dropdown a {
+    background: #fff;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 20rem;
+  }
+  nav .wrappar-nav .dropdown a:nth-child(1) {
+    margin-top: 0;
+  }
+  nav .list-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  header {
+    padding: 1rem 3.5rem;
+  }
+  header .logo {
+    width: 3rem !important;
+  }
+  header input {
+    padding: 0.5rem 1.4rem !important;
+  }
+  footer .footer-up li a {
+    font-size: 1rem;
+  }
+  footer .adress {
+    font-size: 0.9rem;
+  }
+  footer .email,
+  footer .phone {
+    font-size: 1.1rem !important;
+  }
+  footer .logo-footer {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 930px) {
+  section.hero h1 {
+    font-size: 2.5rem;
+  }
+  section.hero .hero-text {
+    font-size: 1.2rem;
+  }
+  section.hero form ion-icon {
+    font-size: 1.5rem;
+  }
+  section.hero form p,
+  section.hero form input {
+    font-size: 1rem;
+  }
+  section.hero form input {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem !important;
+  }
+  footer .footer-up {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    max-width: 30rem;
+    gap: 2rem 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  footer .footer-up li a {
+    font-size: 1.1rem;
+  }
+  footer .footer-up .adress {
+    font-size: 1rem;
+  }
+  footer .footer-up .email,
+  footer .footer-up .phone {
+    font-size: 1.3rem !important;
+  }
+  footer .footer-up .logo-footer {
+    font-size: 1.5rem !important;
+  }
+  footer .footer-down p,
+  footer .footer-down a {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  section.hero {
+    background-image: url("img/hero.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+  }
+  section.hero h1 {
+    margin-top: 5rem;
+    color: #fff;
+  }
+  section.hero .hero-text,
+  section.hero p {
+    color: #fff;
+  }
+  section.hero form {
+    color: #fff;
+    background: #204b45;
+  }
+  section.hero form p,
+  section.hero form ion-icon {
+    color: #fff;
+  }
+  section.hero form input {
+    background: #058875;
+  }
+  section.hero .img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-down {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-down::before {
+    bottom: 2.7rem !important;
+  }
+  .footer-down .copyright {
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  footer .footer-up {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 423px) {
+  section.hero form ion-icon {
+    font-size: 1.1rem;
+  }
+  section.hero form p,
+  section.hero form input {
+    font-size: 0.9rem;
+  }
+  section.hero form input {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem !important;
+  }
+  .footer-down::before {
+    bottom: 3.7rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

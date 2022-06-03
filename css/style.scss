@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('about.css');
+@import url('regler.css');
+@import url('login.css');
+@import url('banor.css');
+@import url('add.css');
 
+// ---- Root ----
 $primary: #204b45;
 $secondary: #e95e2a;
 $green: #058875;
@@ -7,7 +13,6 @@ $green-light: #cbf4ee;
 $gray: #627b77;
 $gray-light: #f5f5f5;
 
-// ---- Root ----
 *,
 html,
 body {
@@ -80,29 +85,80 @@ body {
 
 section {
   padding: 4rem 3.5rem;
+  max-width: 1400px !important;
+  margin: auto;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.start {
+    margin-top: 5rem !important;
+
+    h1, .img {
+      margin-top: 0 !important;
+    }
+  }
 }
 
 // ---- Header ----
 
 header {
-  padding: 2rem 3.5rem;
+  max-width: 1400px !important;
+  margin: auto;
+  padding: 1.5rem 3.5rem;
   position: fixed;
   top: 0;
   min-width: 100%;
   z-index: 1;
+  background: transparent;
+
+  &.header-scroll {
+    background: $gray-light;
+  }
 
   nav {
     background: transparent;
     width: 100%;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .wrappar-nav {
+      display: none;
+    }
 
     .nav-wrappar {
       display: flex;
       justify-content: space-between;
       background: transparent;
 
-      input {
-        background-color: $secondary;
-        color: #fff;
+      .logo-wrappar {
+        display: flex;
+
+        img.logo {
+          width: 3rem;
+        }
+      }
+
+      #admin {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-radius: 20rem;
+        background: $secondary;
+
+        p,
+        ion-icon {
+          font-size: 1rem !important;
+          color: #fff;
+        }
+
+        p {
+          margin-left: 0.3rem;
+        }
       }
 
       span#nev-left {
@@ -159,7 +215,7 @@ header {
       right: 0;
       top: 0;
       z-index: 1;
-      background-color: $gray-light;
+      background-color: $green;
       padding: 0 5rem;
       transform: translateX(100%);
       transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1);
@@ -170,6 +226,7 @@ header {
 
       ul {
         margin-top: 7rem;
+        overflow-y: scroll;
 
         li {
           list-style: none;
@@ -182,6 +239,7 @@ header {
             font-weight: 500;
             grid-area: header;
             cursor: pointer;
+            color: #fff;
           }
         }
       }
@@ -195,35 +253,17 @@ header {
           'dropdown dropdown';
         min-width: 13rem;
         margin-top: 1.5rem;
+        curser: pointer;
 
-        i.dropdown-icon {
-          width: 1rem;
-          height: 1rem;
+        .dropdown-icon {
+          font-size: 2rem;
+          color: #fff;
           position: relative;
-          transform: rotate(-90deg);
           grid-area: icon;
           margin-left: auto;
 
-          span.dropdown-bar {
-            content: '';
-            display: block;
-            margin-bottom: 0 !important;
-            width: 100%;
-            height: 3px;
-            background-color: #058875;
-            margin-bottom: 1rem;
-
-            &:nth-child(1) {
-              transform: translate(0, (0.6875rem)) rotate(45deg);
-            }
-
-            &:nth-child(2) {
-              transform: translate(0, (-0.1rem)) rotate(-45deg);
-            }
-          }
-
           &.active {
-            transform: rotate(90deg);
+            transform: rotate(180deg);
           }
         }
 
@@ -240,7 +280,7 @@ header {
             font-size: 1.9rem;
             margin-left: 2.5rem;
             font-weight: 400;
-            color: $gray;
+            color: #fff;
           }
         }
       }
@@ -250,7 +290,9 @@ header {
 
 // ---- Hero Section ----
 section.hero {
-  margin-top: 5rem;
+  max-width: 1400px !important;
+  margin: auto;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
 
@@ -293,25 +335,47 @@ section.hero {
 
   .img {
     background-image: url('img/hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 40rem;
     height: 30rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
 }
 
 // ---- News Section ----
 section.news {
+  max-width: 1400px !important;
+  margin: auto;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
+
+  h2 {
+    margin-left: 3.5rem;
+  }
 
   .news-container {
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
+    overflow-x: scroll;
 
     .news-item {
       background: $gray-light;
       border-radius: 1rem;
       padding: 1.6rem 2rem;
-      max-width: 25%;
+      max-width: 15rem;
+      min-width: 14rem;
+
+      &:nth-child(1) {
+        margin-left: 3.5rem !important;
+      }
+      &:nth-last-child(1) {
+        margin-right: 3.5rem !important;
+      }
 
       .history {
         color: $gray;
@@ -340,17 +404,35 @@ section.news {
 
 // ---- Events Section ----
 section.events {
+  max-width: 1400px !important;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+
+  h2 {
+    margin-left: 3.5rem;
+  }
+
   .events-container {
     margin-top: 2rem;
     position: relative;
     display: flex;
     gap: 1rem;
+    overflow-x: scroll;
 
     .events-item {
       background: $gray-light;
       border-radius: 1rem;
       padding: 1.6rem 2rem;
-      max-width: 25%;
+      max-width: 16rem;
+      min-width: 16rem;
+
+      &:nth-child(1) {
+        margin-left: 3.5rem !important;
+      }
+      &:nth-last-child(1) {
+        margin-right: 3.5rem !important;
+      }
 
       .history {
         color: $gray;
@@ -377,7 +459,7 @@ section.events {
     cursor: pointer;
     position: absolute;
     top: 40%;
-    right: 1.5rem;
+    right: 5rem;
   }
 }
 
@@ -386,11 +468,14 @@ footer {
   background: $gray-light;
   padding: 2rem 3.5rem;
   color: $gray !important;
+  margin-top: 5rem;
 
   .footer-up {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    max-width: 1300px !important;
+    margin: auto;
 
     .main {
       margin-right: 5rem;
@@ -425,7 +510,7 @@ footer {
 
       span {
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 600;
         color: $primary;
       }
 
@@ -448,7 +533,9 @@ footer {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
+    max-width: 1300px !important;
+    margin: auto;
 
     p {
       color: $gray;
@@ -464,5 +551,260 @@ footer {
       position: absolute;
       bottom: 1.5rem;
     }
+  }
+}
+
+// ---- Media Queries ----
+@media (min-width: 1400px) {
+  nav {
+    max-width: 1400px;
+    margin: auto;
+
+    .wrappar-nav {
+      display: flex !important;
+      align-items: center;
+
+      .wrappar-nav-item {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20rem;
+
+        &:hover {
+          background-color: #d3d3d3;
+
+          .dropdown {
+            display: flex;
+          }
+        }
+      }
+
+      .dropdown-container {
+        cursor: pointer;
+        position: relative;
+
+        span {
+          display: flex;
+          align-items: center;
+
+          p {
+            margin-right: 0.3rem;
+            font-size: 1.2rem;
+          }
+
+          ion-icon {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 3rem;
+        left: 0;
+        background: #d8d8d8;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        a {
+          background: #fff;
+          padding: 0.5rem 1rem;
+          margin-top: 1rem;
+          font-size: 1rem;
+          border-radius: 20rem;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    .list-icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  header {
+    padding: 1rem 3.5rem;
+
+    .logo {
+      width: 3rem !important;
+    }
+
+    input {
+      padding: 0.5rem 1.4rem !important;
+    }
+  }
+
+  footer {
+    .footer-up li a {
+      font-size: 1rem;
+    }
+
+    .adress {
+      font-size: 0.9rem;
+    }
+
+    .email,
+    .phone {
+      font-size: 1.1rem !important;
+    }
+
+    .logo-footer {
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  section.hero {
+    h1 {
+      font-size: 2.5rem;
+    }
+    .hero-text {
+      font-size: 1.2rem;
+    }
+
+    form {
+      ion-icon {
+        font-size: 1.5rem;
+      }
+
+      p,
+      input {
+        font-size: 1rem;
+      }
+
+      input {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+
+  footer {
+    .footer-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: end;
+      max-width: 30rem;
+      gap: 2rem 1rem;
+      margin: auto;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+
+      li a {
+        font-size: 1.1rem;
+      }
+
+      .adress {
+        font-size: 1rem;
+      }
+
+      .email,
+      .phone {
+        font-size: 1.3rem !important;
+      }
+
+      .logo-footer {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    .footer-down {
+      p,
+      a {
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  section.hero {
+    background-image: url('img/hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+
+    h1 {
+      margin-top: 5rem;
+      color: #fff;
+    }
+
+    .hero-text,
+    p {
+      color: #fff;
+    }
+
+    form {
+      color: #fff;
+      background: $primary;
+
+      p,
+      ion-icon {
+        color: #fff;
+      }
+
+      input {
+        background: $green;
+      }
+    }
+
+    .img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-down {
+    flex-direction: column;
+
+    &::before {
+      bottom: 2.7rem !important;
+    }
+
+    .copyright {
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  footer {
+    .footer-up {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 423px) {
+  section.hero {
+    form {
+      ion-icon {
+        font-size: 1.1rem;
+      }
+
+      p,
+      input {
+        font-size: 0.9rem;
+      }
+
+      input {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+
+  .footer-down::before {
+    bottom: 3.7rem !important;
   }
 }

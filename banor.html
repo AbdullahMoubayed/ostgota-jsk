@@ -8,6 +8,7 @@
   </head>
   <body>
     <div id="app"></div>
+    <script type="module" src="/main.js"></script>
 
     <!--- Navbar starts -->
     <header>
@@ -93,91 +94,76 @@
         <!-- Navbar body ends -->
       </nav>
     </header>
-    <!-- Navbar ends -->
 
     <!--- Main section starts -->
-    <section class="hero start">
-      <div>
-        <h1 class="hero-title">Östgöta jaktskytte klubben bla bla</h1>
+    <section class="hero">
+      <div class="about-hero">
+        <h1 class="hero-title">Banor på Östgöta Jsk</h1>
         <p class="hero-text">
-          Här kan du som älskar att jaga hitta dig själv, lite beskrivning om
-          klubben ska vara här.
+          Inskjutningsbanan: är öppen alla dagar från klockan 09.00 till 22.00,
+          utom när det skjutförbud på banan, 2 perioder per år, när banan är
+          bokad eller på torsdagar när det är hagelskytte Sporting. Se kalendern
+          för aktuella tider och skjutförbud. <br />
+          När marken är frusen så finns det inget godkänt kulfång. Använd inte
+          inkjutningsbanan,50m-banan eller älgbanan när marken är frusen. När
+          det står ”Banan bokad” i kalendern så är det ej tillåtet med allmän
+          skjutning på bokad bana.
         </p>
-        <p class="button-header">Nästa Tävling</p>
-
-        <form>
-          <ion-icon name="calendar-number-outline"></ion-icon>
-          <p>22-11-15 Fredag</p>
-          <input type="submit" value="GÅ MED" />
-        </form>
       </div>
+      <div class="content">
+        <h3>Innehåll</h3>
 
-      <div class="img"></div>
-    </section>
-    <!-- Main section ends -->
-
-    <!-- Calender section starts -->
-    <!-- Calender section ends -->
-
-    <!-- News section starts -->
-    <section class="news">
-      <h2>Nyheter</h2>
-      <div class="news-container">
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-
-        <div class="news-item">
-          <p class="history">igår</p>
-          <h4>Emma Åkesson tvåa i Skyttiadens riksfinal</h4>
-        </div>
-        <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
+        <p><a href="">Om</a></p>
+        <p><a href="">Styrmöten</a></p>
+        <p><a href="">Medlem</a></p>
+        <p><a href="">öppettider</a></p>
+        <p><a href="">Stadgar</a></p>
+        <p><a href="">Kontakt</a></p>
       </div>
     </section>
-    <!-- News section ends -->
 
-    <!-- Events section starts -->
-    <section class="events">
-      <h2>Viktiga Händerlser</h2>
-      <div class="events-container"></div>
+    <!--- Meet section starts -->
+    <section class="banor-section context">
+      <h2>Banor</h2>
+      <p>
+        På Östgöta Jsk finns det 6 st banor att tillgå som medlem. Nedan listas
+        de som finns förnärvarande.
+      </p>
+
+      <div class="banor-container">
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">Skeetbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">Trapbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">Skeetbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">Skeetbana</div>
+        </div>
+      </div>
+
+      <div id="map"></div>
+
+      <div class="banor-info">
+        Inskjutningsbanan: är öppen alla dagar från klockan 09.00 till 22.00,
+        utom när det skjutförbud på banan, 2 perioder per år, när banan är bokad
+        eller på torsdagar när det är hagelskytte Sporting. Se kalendern för
+        aktuella tider och skjutförbud. När marken är frusen så finns det inget
+        godkänt kulfång. Använd inte inkjutningsbanan,50m-banan eller älgbanan
+        när marken är frusen. När det står ”Banan bokad” i kalendern så är det
+        ej tillåtet med allmän skjutning på bokad bana.
+      </div>
     </section>
-    <!-- Events section ends -->
 
     <!-- Footer starts -->
     <footer>
@@ -238,8 +224,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="dist/bundle.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
