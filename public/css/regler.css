@@ -73,4 +73,22 @@ section.reg-dropdown-sec h2 {
   font-size: 1.7rem;
   font-weight: 500;
 }
+
+@media (max-width: 600px) {
+  .reg-dropdown {
+    padding: 1.5rem 2rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  h4 {
+    font-size: 1.1rem !important;
+  }
+  li {
+    font-size: 1rem !important;
+  }
+}
 /*# sourceMappingURL=regler.css.map */

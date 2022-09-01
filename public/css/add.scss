@@ -133,3 +133,60 @@ section.add {
     }
   }
 }
+
+.update {
+  // margin-top: -4rem !important;
+  margin-left: -30rem !important;
+}
+
+.tavlingarna-item {
+  margin-bottom: 2rem;
+  border: 1.5px solid $primary;
+  padding: 2rem;
+  border-radius: 1rem;
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .info {
+    margin-top: 0.5rem;
+    display: flex;
+
+    p {
+      font-weight: 500;
+
+      &:nth-child(1) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .results-container {
+    margin-top: 1.5rem;
+    display: flex;
+
+    .result {
+      background: $gray-light;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+
+      h4 {
+        font-weight: 500;
+      }
+
+      &:nth-child(1) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .summary {
+    margin-top: 1.5rem;
+    max-width: 30rem;
+  }
+}
+
+.controll {
+  position: fixed;
+}

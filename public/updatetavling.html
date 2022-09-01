@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Östgöta jsk</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!--- Navbar starts -->
+    <header class="controll">
+      <nav>
+        <div class="nav-wrappar">
+          <a class="logo-wrappar" href="/"
+            ><img class="logo" src="img/logo.png" alt="Östgöta JSK"
+          /></a>
+
+          <span id="nev-left">
+            <input type="button" value="Logga Ut" id="logout" />
+          </span>
+        </div>
+
+        <!--- Navbar body starts -->
+        <!-- Navbar body ends -->
+      </nav>
+    </header>
+    <!-- Navbar ends -->
+
+    <!--- Main starts -->
+    <section class="container">
+      <section class="content">
+        <section class="add updatera">
+          <form class="add-form focus panel-nav" id="updatera-form">
+            <h2>Updatera En tävling</h2>
+            <label for="title">Rubrik</label>
+            <input type="text" id="titlet" name="title" required />
+
+            <label for="location">Plats</label>
+            <input type="text" id="location" name="location" required />
+
+            <label for="disc">Sammanfattning</label>
+            <textarea type="text" id="disct" name="disc"> </textarea>
+
+            <label for="junior">Junior</label>
+            <input type="text" id="junior_f" name="junior_f" required />
+            <input type="text" id="junior_s" name="junior_s" required />
+            <input type="text" id="junior_t" name="junior_t" required />
+
+            <label for="lady">Dam</label>
+            <input type="text" id="lady_f" name="lady_f" required />
+            <input type="text" id="lady_s" name="lady_s" required />
+            <input type="text" id="lady_t" name="lady_t" required />
+
+            <span class="btns-span">
+              <input type="submit" value="Uppdatera" />
+              <button id="delet-btn">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </span>
+          </form>
+        </section>
+      </section>
+    </section>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="dist/bundle.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

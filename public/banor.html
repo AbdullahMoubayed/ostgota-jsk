@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Östgöta jsk</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="main.js"></script>
+
+    <!--- Navbar starts -->
+    <header>
+      <nav>
+        <div class="nav-wrappar">
+          <a class="logo-wrappar" href="index.html"
+            ><img class="logo" src="img/logo.png" alt="Östgöta JSK"
+          /></a>
+
+          <span id="nev-left">
+            <div class="wrappar-nav">
+              <a class="wrappar-nav-item" href="">Hem</a>
+              <div class="dropdown-container wrappar-nav-item">
+                <span>
+                  <a href="/about.html"><p>Om</p></a>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+                <div class="dropdown">
+                  <a href="/about.html#meet">Styrmöten</a>
+                  <a href="/about.html#member">Medlem</a>
+                  <a href="/about.html#stadgar">Regler</a>
+                  <a href="/about.html#funk">Funktionär</a>
+                </div>
+              </div>
+              <div class="dropdown-container wrappar-nav-item">
+                <span>
+                  <a href="banor.html"><p>Banor</p></a>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+                <div class="dropdown">
+                  <a href="/banor.html#hyra">Hyra av bana</a>
+                  <a href="/banor.html#intro">Inskjutningsbanan</a>
+                  <a href="/banor.html#shot">Skjutbaneinstruktion</a>
+                  <a href="/banor.html#banorsec">Banor på Östgöta Jsk</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="login.html" id="admin">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p>Admin</p>
+            </a>
+            <i class="list-icon">
+              <span class="icon-bar"></span> <span class="icon-bar"></span
+            ></i>
+          </span>
+        </div>
+
+        <!--- Navbar body starts -->
+        <div class="nav-body">
+          <ul>
+            <li><a href="/">Hem</a></li>
+            <li class="dropdown-container">
+              <span> <a href="/about.html">Om</a></span>
+              <ion-icon
+                class="dropdown-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+              <ul class="dropdown">
+                <li><a href="/about.html#meet">Styrmöten</a></li>
+                <li><a href="/about.html#member">Medlem</a></li>
+                <li><a href="/about.html#stadgar">Regler</a></li>
+                <li><a href="/about.html#funk">Funktionär</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-container">
+              <span><a href="/banor.html">Banor</a></span>
+              <ion-icon
+                class="dropdown-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+              <ul class="dropdown">
+                <li><a href="/banor.html#hyra">Hyra av bana</a></li>
+                <li><a href="/banor.html#intro">Inskjutningsbanan</a></li>
+                <li><a href="/banor.html#shot">Skjutbaneinstruktion</a></li>
+                <li><a href="/banor.html#banorsec">Banor på Östgöta Jsk</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar body ends -->
+      </nav>
+    </header>
+
+    <!--- Main section starts -->
+    <section class="hero">
+      <div class="about-hero">
+        <h1 class="hero-title">Banor på Östgöta Jsk</h1>
+        <p class="hero-text">
+          Inskjutningsbanan: är öppen alla dagar från klockan 09.00 till 22.00,
+          utom när det skjutförbud på banan, 2 perioder per år, när banan är
+          bokad eller på torsdagar när det är hagelskytte Sporting. Se kalendern
+          för aktuella tider och skjutförbud. <br />
+          När marken är frusen så finns det inget godkänt kulfång. Använd inte
+          inkjutningsbanan,50m-banan eller älgbanan när marken är frusen. När
+          det står ”Banan bokad” i kalendern så är det ej tillåtet med allmän
+          skjutning på bokad bana.
+        </p>
+      </div>
+      <div class="content">
+        <h3>Innehåll</h3>
+
+        <p><a href="/banor.html#hyra">Hyra av bana</a></p>
+        <p><a href="/banor.html#intro">Inskjutningsbanan</a></p>
+        <p><a href="/banor.html#shot">Skjutbaneinstruktion</a></p>
+        <p><a href="/banor.html#banorsec">Banor på Östgöta Jsk</a></p>
+      </div>
+    </section>
+
+    <section class="hyra" id="hyra">
+      <h2>Hyra av bana</h2>
+      <p class="summary">
+        Det går att hyra banan mot en kostnad. Detta kan erbjudas i mån av tid
+        och när bana inte är bokad för annat. Det måste finnas en funktionär
+        tillgänglig vid efterfrågat tillfälle.
+      </p>
+
+      <h3>Rutin</h3>
+      <p class="runtin">
+        1. Kontrollera först att önskat datum ej är bokat i vår kalender.
+      </p>
+      <p class="runtin">
+        2. Skicka sedan förfrågan till vår mail:
+        <a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a>
+      </p>
+      <p class="runtin">
+        3. Invänta bekräftelse. Vi kontrollerar då om det finns någon funktionär
+        tillgänglig och återkommer med svar på förfrågan.
+      </p>
+    </section>
+
+    <section class="intro" id="intro">
+      <h2>Inskjutningsbanan</h2>
+      <p class="first">
+        Inskjutningsbanan: är öppen alla dagar från klockan 09.00 till 22.00,
+        utom när det skjutförbud på banan, 2 perioder per år, när banan är bokad
+        eller på torsdagar när det är hagelskytte Sporting. Se kalendern för
+        aktuella tider och skjutförbud.
+      </p>
+      <p>
+        När marken är frusen så finns det inget godkänt kulfång. Använd inte
+        inkjutningsbanan,50m-banan eller älgbanan när marken är frusen.
+      </p>
+      <p>
+        När det står "Banan bokad" i kalendern så är det ej tillåtet med allmän
+        skjutning på bokad bana.
+      </p>
+    </section>
+
+    <section class="shot" id="shot">
+      <h2>Skjutbaneinstruktion</h2>
+      <h4 class='first'>Generell Skjutbaneinstruktion avseende Östgöta Jaktskytteklubb</h3>
+      <h4>Koordinater 58.6256, 15.3181</h4>
+
+      <h3>Skjutbanan</h3>
+      <p>Skjutbanan ägs av Linköpings Kommun och disponeras av Östgöta Jaktskytteklubb som är ansluten till både Svenska Jägareförbundet och Jägarnas riksförbund.</p>
+
+      <h3>Huvudman för skjutbanan</h3>
+      <p>Skjutbanechef: Preben Garner <br> Kontakt: <a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a></p>
+      
+      <h3>Berättigade att vistas på banan</h3>
+      <p>Endast medlemmar i Ötsgöta Jsk, deltagare i öppna tävlingar samt organisationer eller enskilda som tillfälligt hyr banan äger rätt att vistas på skjutbanan. Gäster till medlemmar i ovanstående förening kan vid enstaka tillfällen vistas på banan i medlems sällskap.</p>
+      <p>Hörselskydd och skyddsglasögon är obligatoriskt att använda.</p>
+
+      <h3>Tillåtna skjutdagar och skjuttider</h3>
+      <p>Alla dagar från klockan 09.00 till 22.00, utom när det är skjutförbud på banan, 2 perioder per år. Se hemsidan för aktuella tider och skjutförbud.</p>
+
+      <h3>Tillåtna skjutriktningar</h3>
+      <p>Tillåten skjutriktning är mot anlagt kulfång.</p>
+
+      <h3>Tillåtna skjutplatser</h3>
+      <p>Skjutning får endast ske på skjutledarens godkänd/utmärkt skjutplats.</p>
+
+      <h3>Skjutledare</h3>
+      <p>Vid all skjutning ska skjutledare utses. Ensam skytt är skjutledare.</p>
+      <p>Skjutledare ska vara insatt i skjutbaneinstruktionen och gällande SäkB och är närmast ansvarig för att åtgärder vidtas för att förebygga olyckshändelser vid skjutningen.</p>
+      <p>Skjutledare ska ha god kännedom om den skyttegren som denne är satt att leda.</p>
+      <p>Skjutledare skall ha tillgång till mobiltelefon.</p>
+
+      <h3>Tillåtna vapen</h3>
+      <p>Handeldvapen max 20 mm, hagel max kal.12.</p>
+
+      <h3>Tillåten Ammunition</h3>
+      <p>Max klass 1</p>
+
+      <h3>Förbjudet</h3>
+      <p>Hagelskytte med blyammunition är inte tillåtet.</p>
+
+      <h3>Tillåtna mål och målplaceringar</h3>
+      <p>Mål som inte fästs i målställningar ska placeras så att nedslag från kulor och rikoschetter hamnar i kulfånget med ett minsta avstånd av 3 meter från kulfångets yttre kant.</p>
+
+      <h3>Sjukvårdsutrustning</h3>
+      <p>Sjukvårdsutrustning: Första förband finns i klubbstugan. Ambulans tillkallas via Räddningstjänsten, telefon 112.</p>
+      <p>Adressen är: Kvarn 180, 590 28 Borensberg, koordinater: 58.6256, 15.3181</p>
+      <p>Underskrift: Styrelsen och skjutbanechefen Östgöta Jsk</p>
+    </section>
+
+    <!--- Meet section starts -->
+    <section class="banor-section context" id='banorsec'>
+      <h2>Banor på Östgöta Jsk</h2>
+      <p>
+        På Östgöta Jsk finns det 6 st banor att tillgå som medlem. Nedan listas
+        de som finns förnärvarande.
+      </p>
+
+      <div class="banor-container">
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">Skeetbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">Trapbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">Compak/sportingbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">50m/Grisbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">80m/Älgbana</div>
+        </div>
+
+        <div class="bana">
+          <ion-icon name="navigate-outline"></ion-icon>
+          <div class="bana-name">100m Inskjutningasbana</div>
+        </div>
+      </div>
+
+      <div id="map"></div>
+
+      <p>Egenmedtagna maskiner så som lerduvekastare är ej tillåtet på Östgöta Jsk bana.Skytteklubben har verksamheten och tillståndet kopplat till vår verksamhet.</p>
+      <p>Vänligen lämna inget inskjutningsmaterial på banan. Det man tar med sig dit, ska man ta med sig hem. </p>
+      <p>Att tänka på: Frusen mark räknas inte som godkänt kulfång. Värt att tänka på när man besöker skjutbanan vintertid.</p>
+    </section>
+
+    <!-- Footer starts -->
+    <footer>
+      <div class="footer-up">
+        <div class="main">
+          <h2 class="logo-footer">Östgöta Jaktskytteklubb</h2>
+          <p class="adress">
+            Kvarn 180 <br />
+            9132 Motala
+          </p>
+          <p class="email">
+            <a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a>
+          </p>
+          <!-- <p class="phone">+46 7201 266 96</p> -->
+        </div>
+
+        <li>
+          <a href="#">
+            <span>Hem</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">tävlingsresultat</a></li>
+              <li><a href="#">Östgöta Jsk stadgar</a></li>
+              <li><a href="/about.html#klubbinfo">Klubbinfo</a></li>
+              <li>
+                <a
+                  href="https://www.skyttesport.se/globalassets/svenska-skyttesportforbundet/regler/sakb/sakb_2020.pdf"
+                  target="_blank"
+                  >SäkB</a
+                >
+              </li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <a href="/about.html"><span>Om</span></a>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="/about.html#meet">Styrmöten</a></li>
+              <li><a href="/about.html#member">Medlem</a></li>
+              <li><a href="/about.html#stadgar">Regler</a></li>
+              <li><a href="/about.html#funk">Funktionär</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="/banor.html">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="/banor.html#hyra">Hyra av bana</a></li>
+              <li><a href="/banor.html#intro">Inskjutningsbanan</a></li>
+              <li><a href="/banor.html#shot">Skjutbaneinstruktion</a></li>
+              <li><a href="/banor.html#banorsec">Banor på Östgöta Jsk</a></li>
+            </ul>
+          </a>
+        </li>
+      </div>
+
+      <div class="footer-down">
+        <p class="copyright">© 2022 Östgöta jsk</p>
+        <p class="author">
+          Designed & coded with ❤️ by
+          <a href="https://github.com/AbdullahMoubayed"> AbdullahM🏓</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

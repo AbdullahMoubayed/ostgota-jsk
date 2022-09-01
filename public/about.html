@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Östgöta jsk</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="main.js"></script>
+
+    <!--- Navbar starts -->
+    <header>
+      <nav>
+        <div class="nav-wrappar">
+          <a class="logo-wrappar" href="index.html"
+            ><img class="logo" src="img/logo.png" alt="Östgöta JSK"
+          /></a>
+
+          <span id="nev-left">
+            <div class="wrappar-nav">
+              <a class="wrappar-nav-item" href="">Hem</a>
+              <div class="dropdown-container wrappar-nav-item">
+                <span>
+                  <a href="/about.html"><p>Om</p></a>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+                <div class="dropdown">
+                  <a href="/about.html#meet">Styrmöten</a>
+                  <a href="/about.html#member">Medlem</a>
+                  <a href="/about.html#stadgar">Regler</a>
+                  <a href="/about.html#funk">Funktionär</a>
+                </div>
+              </div>
+              <div class="dropdown-container wrappar-nav-item">
+                <span>
+                  <a href="banor.html"><p>Banor</p></a>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+                <div class="dropdown">
+                  <a href="/banor.html#hyra">Hyra av bana</a>
+                  <a href="/banor.html#intro">Inskjutningsbanan</a>
+                  <a href="/banor.html#shot">Skjutbaneinstruktion</a>
+                  <a href="/banor.html#banorsec">Banor på Östgöta Jsk</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="login.html" id="admin">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p>Admin</p>
+            </a>
+            <i class="list-icon">
+              <span class="icon-bar"></span> <span class="icon-bar"></span
+            ></i>
+          </span>
+        </div>
+
+        <!--- Navbar body starts -->
+        <div class="nav-body">
+          <ul>
+            <li><a href="/">Hem</a></li>
+            <li class="dropdown-container">
+              <span> <a href="/about.html">Om</a></span>
+              <ion-icon
+                class="dropdown-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+              <ul class="dropdown">
+                <li><a href="/about.html#meet">Styrmöten</a></li>
+                <li><a href="/about.html#member">Medlem</a></li>
+                <li><a href="/about.html#stadgar">Regler</a></li>
+                <li><a href="/about.html#funk">Funktionär</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-container">
+              <span><a href="/banor.html">Banor</a></span>
+              <ion-icon
+                class="dropdown-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+              <ul class="dropdown">
+                <li><a href="/banor.html#hyra">Hyra av bana</a></li>
+                <li><a href="/banor.html#intro">Inskjutningsbanan</a></li>
+                <li><a href="/banor.html#shot">Skjutbaneinstruktion</a></li>
+                <li><a href="/banor.html#banorsec">Banor på Östgöta Jsk</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar body ends -->
+      </nav>
+    </header>
+
+    <!--- Main section starts -->
+    <section class="hero">
+      <div class="about-hero">
+        <h1 class="hero-title">Om Östgöta JSK</h1>
+        <p class="hero-text">
+          Here ska stå information och presentation om Östgöta Jaktskytte
+          Klubben, allmänt info och välkommen meddelande Here ska stå
+          information och presentation om Östgöta Jaktskytte Klubben, allmänt
+          info och välkommen meddelande
+        </p>
+      </div>
+      <div class="content">
+        <h3>Innehåll</h3>
+
+        <p><a href="/about.html#meet">Styrmöten</a></p>
+        <p><a href="/about.html#member">Medlem</a></p>
+        <p><a href="/about.html#stadgar">Regler</a></p>
+        <p><a href="/about.html#funk">Funktionär</a></p>
+        <p><a href="/about.html#for">Föreningen</a></p>
+        <p><a href="/about.html#klubbinfo">Klubbinfo</a></p>
+      </div>
+    </section>
+
+    <!--- Meet section starts -->
+    <section class="meet-section context" id="meet">
+      <h2>Styrmöten & Årsmöte</h2>
+      <p>
+        Varmt välkommen på årsmöte för Östgöta Jaktskytteklubb! Vi kommer inte
+        erbjuda onlinemöte i år.
+      </p>
+
+      <div class="meets-container">
+        <div class="meet">
+          <h5>Styrelsemöte</h5>
+          <span>
+            <ion-icon name="calendar-number-outline"></ion-icon>
+            <p>2022, mars 29</p>
+          </span>
+          <span>
+            <ion-icon name="hourglass-outline"></ion-icon>
+            <p>Tisdag kl. 15:30</p>
+          </span>
+        </div>
+
+        <div class="meet">
+          <h5>Styrelsemöte</h5>
+          <span>
+            <ion-icon name="calendar-number-outline"></ion-icon>
+            <p>2022, mars 29</p>
+          </span>
+          <span>
+            <ion-icon name="hourglass-outline"></ion-icon>
+            <p>Tisdag kl. 15:30</p>
+          </span>
+        </div>
+
+        <div class="meet">
+          <h5>Styrelsemöte</h5>
+          <span>
+            <ion-icon name="calendar-number-outline"></ion-icon>
+            <p>2022, mars 29</p>
+          </span>
+          <span>
+            <ion-icon name="hourglass-outline"></ion-icon>
+            <p>Tisdag kl. 15:30</p>
+          </span>
+        </div>
+
+        <div class="meet">
+          <h5>Styrelsemöte</h5>
+          <span>
+            <ion-icon name="calendar-number-outline"></ion-icon>
+            <p>2022, mars 29</p>
+          </span>
+          <span>
+            <ion-icon name="hourglass-outline"></ion-icon>
+            <p>Tisdag kl. 15:30</p>
+          </span>
+        </div>
+
+        <div class="meet">
+          <h5>Styrelsemöte</h5>
+          <span>
+            <ion-icon name="calendar-number-outline"></ion-icon>
+            <p>2022, mars 29</p>
+          </span>
+          <span>
+            <ion-icon name="hourglass-outline"></ion-icon>
+            <p>Tisdag kl. 15:30</p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!--- Member section starts -->
+    <section class="member context" id="member">
+      <h2>Meldlem</h2>
+      <p>
+        För att bli medlem i Östgöta jsk så ska man betala in 600 kr till
+        bankgiro <span class="secondary">5086-8082</span> eller Swish
+        123-3943479. Mejla sedan: Namn, adress, telefonnummer samt personnummer
+        till <a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a>
+        <br />
+        Vi lägger in alla uppgifter i IdrottOnline. Nedan finns information om
+        detta:
+        <br />
+        Personuppgifter och IdrottOnline - Svenskidrott
+      </p>
+    </section>
+
+    <!--- Stadgar section starts -->
+    <section class="stadgar context" id="stadgar">
+      <h2>Regler & stadgar</h2>
+      <p><a href="/banor.html#intro">Skjutbaneinstruktion</a></p>
+      <p><a href="/regler.html">Östgöta Jsk stadgar</a></p>
+    </section>
+
+    <section class="funk" id="funk">
+      <h2>Funktionär</h2>
+      <p>
+        Som en ideell förening söker vi ständigt nya funktionärer som vill bidra
+        med sin värdefulla tid. Att göra så vi kan fortsätta med att driva denna
+        bana är viktigt för alla skyttar, såväl sportskyttar som jägare.
+      </p>
+      <p>
+        Vill du vara med och driva verksamheten framåt och se till att vi kan
+        hålla banan öppen så skicka ett mail till
+        <a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a> för mer
+        information.
+      </p>
+    </section>
+
+    <section class="for" id="for">
+      <h2>Föreningen</h2>
+      <h3>Hitta till Östgöta Jsk</h3>
+      <p>
+        Vid Borensberg kör mot Tjällmo/Örebro väg 211. Efter 6,5 km, sväng höger
+        vid gul skylt Jaktskyttebanor
+      </p>
+      <p>
+        Adress: Kvarn 180 Borensberg <br />
+        Eniro visar rätt väg.
+      </p>
+    </section>
+
+    <section class="klubbinfo" id="klubbinfo">
+      <h2>Klubbinfo</h2>
+
+      <div class="container">
+        <span>
+          <h5>Bildad</h5>
+          <p>2005-04-15</p>
+        </span>
+
+        <span>
+          <h5>Föreningsnummer</h5>
+          <p>45238-38</p>
+        </span>
+
+        <span>
+          <h5>Postadress</h5>
+          <p>Kvarn 180, 59132 Motala</p>
+        </span>
+
+        <span>
+          <h5>E-post</h5>
+          <p><a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a></p>
+        </span>
+
+        <span>
+          <h5>Bankgiro</h5>
+          <p>5086-8082</p>
+        </span>
+
+        <span>
+          <h5>Organisationsnummer</h5>
+          <p>802420-4359</p>
+        </span>
+      </div>
+    </section>
+
+    <!-- Footer starts -->
+    <footer>
+      <div class="footer-up">
+        <div class="main">
+          <h2 class="logo-footer">Östgöta Jaktskytteklubb</h2>
+          <p class="adress">
+            Kvarn 180 <br />
+            9132 Motala
+          </p>
+          <p class="email">
+            <a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a>
+          </p>
+          <!-- <p class="phone">+46 7201 266 96</p> -->
+        </div>
+
+        <li>
+          <a href="#">
+            <span>Hem</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">tävlingsresultat</a></li>
+              <li><a href="#">Östgöta Jsk stadgar</a></li>
+              <li><a href="/about.html#klubbinfo">Klubbinfo</a></li>
+              <li>
+                <a
+                  href="https://www.skyttesport.se/globalassets/svenska-skyttesportforbundet/regler/sakb/sakb_2020.pdf"
+                  target="_blank"
+                  >SäkB</a
+                >
+              </li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <a href="/about.html"><span>Om</span></a>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="/about.html#meet">Styrmöten</a></li>
+              <li><a href="/about.html#member">Medlem</a></li>
+              <li><a href="/about.html#stadgar">Regler</a></li>
+              <li><a href="/about.html#funk">Funktionär</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="/banor.html">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="/banor.html#hyra">Hyra av bana</a></li>
+              <li><a href="/banor.html#intro">Inskjutningsbanan</a></li>
+              <li><a href="/banor.html#shot">Skjutbaneinstruktion</a></li>
+              <li><a href="/banor.html#banorsec">Banor på Östgöta Jsk</a></li>
+            </ul>
+          </a>
+        </li>
+      </div>
+
+      <div class="footer-down">
+        <p class="copyright">© 2022 Östgöta jsk</p>
+        <p class="author">
+          Designed & coded with ❤️ by
+          <a href="https://github.com/AbdullahMoubayed"> AbdullahM🏓</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

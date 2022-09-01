@@ -1,5 +1,5 @@
 section.context {
-  max-width: 78% !important;
+  max-width: 78%;
   margin-left: 0 !important;
 }
 
@@ -19,8 +19,12 @@ section.hero .about-hero .hero-text {
 section.hero .content {
   background: #e7fffb !important;
   padding: 2rem;
-  padding-right: 6rem;
+  padding-right: 4rem;
+  margin-left: 3rem;
   border-left: 5px solid #058875;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 section.hero .content h3 {
@@ -40,7 +44,7 @@ section.hero .content p a {
 }
 
 section.meet-section {
-  max-width: 75%;
+  margin: auto !important;
 }
 
 section.meet-section p {
@@ -62,11 +66,11 @@ section.meet-section .meets-container {
 section.meet-section .meets-container .meet {
   background: #f5f5f5;
   border-radius: 1rem;
-  padding: 1.6rem 2rem;
+  padding: 1.1rem 1.3rem;
 }
 
 section.meet-section .meets-container .meet h5 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.3rem;
 }
@@ -82,13 +86,13 @@ section.meet-section .meets-container .meet span {
 }
 
 section.meet-section .meets-container .meet span p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 0;
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
 }
 
 section.member {
-  max-width: 55rem;
+  margin: auto !important;
 }
 
 section.member p {
@@ -99,6 +103,10 @@ section.member p {
 
 section.member p span {
   color: #e95e2a;
+}
+
+section.stadgar {
+  margin: auto !important;
 }
 
 section.stadgar h2 {
@@ -115,7 +123,64 @@ section.stadgar p a {
   text-decoration: underline;
 }
 
+section.funk h2 {
+  margin-bottom: 0.5rem;
+}
+
+section.funk p {
+  margin-top: 1rem;
+}
+
+section.for h2 {
+  margin-bottom: 0.5rem;
+}
+
+section.for h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+section.for p {
+  margin-top: 1rem;
+}
+
+section.klubbinfo h2 {
+  margin-bottom: 1.5rem;
+}
+
+section.klubbinfo .container {
+  background: #f5f5f5;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+section.klubbinfo .container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+section.klubbinfo .container span:nth-child(1) {
+  margin-top: 0 !important;
+}
+
+section.klubbinfo .container span h5 {
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
 section.contact {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  section {
+    max-width: 100% !important;
+  }
 }
 /*# sourceMappingURL=about.css.map */

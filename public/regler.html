@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Östgöta jsk</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!--- Navbar starts -->
+    <header>
+      <nav>
+        <div class="nav-wrappar">
+          <a class="logo-wrappar" href="index.html"
+            ><img class="logo" src="img/logo.png" alt="Östgöta JSK"
+          /></a>
+
+          <span id="nev-left">
+            <div class="wrappar-nav">
+              <a class="wrappar-nav-item" href="">Hem</a>
+              <div class="dropdown-container wrappar-nav-item">
+                <span>
+                  <p>Banor</p>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+                <div class="dropdown">
+                  <a href="#">Kontakt</a>
+                  <a href="#">styrmöten</a>
+                  <a href="#">öppettider</a>
+                  <a href="#">regler</a>
+                  <a href="#">gästbok</a>
+                  <a href="#">säkB</a>
+                </div>
+              </div>
+              <div class="dropdown-container wrappar-nav-item">
+                <span
+                  ><p>Banor</p>
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+                <div class="dropdown">
+                  <a href="">none</a>
+                  <a href="">hihi</a>
+                  <a href="">varför</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="login.html" id="admin">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p>Admin</p>
+            </a>
+            <i class="list-icon">
+              <span class="icon-bar"></span> <span class="icon-bar"></span
+            ></i>
+          </span>
+        </div>
+
+        <!--- Navbar body starts -->
+        <div class="nav-body">
+          <ul>
+            <li><a href="/">Hem</a></li>
+            <li class="dropdown-container">
+              <span> <a href="/about.html">Om</a></span>
+              <ion-icon
+                class="dropdown-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+              <ul class="dropdown">
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">styrmöten</a></li>
+                <li><a href="#">öppettider</a></li>
+                <li><a href="#">regler</a></li>
+                <li><a href="#">gästbok</a></li>
+                <li><a href="#">säkB</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-container">
+              <span><a href="/banor.html">Banor</a></span>
+              <ion-icon
+                class="dropdown-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+              <ul class="dropdown">
+                <li><a href="#">none</a></li>
+                <li><a href="#">hihi</a></li>
+                <li><a href="#">varför</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar body ends -->
+      </nav>
+    </header>
+
+    <!--- Main section starts -->
+    <section class="hero">
+      <div class="about-hero">
+        <h1 class="hero-title">Östgöta Jsk stadgar</h1>
+        <p class="hero-text">
+          Organisationens namn, Östgöta Jaktskytteklubb (Östgöta Jsk). Det är en
+          opolitisk förening utan ekonomiskt ändamål. <br />
+          Jaktskytteklubbens beslutande organ är årsmöte, extra årsmöte och
+          styrelsen. Styrelsen har sitt säte där styrelsen bestämmer.
+        </p>
+      </div>
+      <!-- <div class="content">
+        <h3>Innehåll</h3>
+
+        <p><a href="">Om</a></p>
+        <p><a href="">Styrmöten</a></p>
+        <p><a href="">Medlem</a></p>
+        <p><a href="">öppettider</a></p>
+        <p><a href="">Stadgar</a></p>
+        <p><a href="">Kontakt</a></p>
+      </div> -->
+    </section>
+
+    <!--- sropdowns starts -->
+    <section class="reg-dropdown-sec">
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 1. Mål</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <h4>Jaktskytteklubben har till ändamål att</h4>
+          <ul>
+            <li>
+              organisera och tillvarataga jägarnas intressen inom
+              verksamhetsområdet.
+            </li>
+            <li>verka för bibehållandet av artrika viltstammar.</li>
+            <li>
+              bereda sina medlemmar möjlighet till rekreation genom övning och
+              tävling i jaktskytte.
+            </li>
+            <li>medverka till viltvårdsarbete.</li>
+            <li>bedriva utbildning och information inom jakt och viltvård.</li>
+            <li>Östgöta Jsk är öppet för alla som önskar vara medlemmar.</li>
+            <li>
+              bibehålla eller öka jägarnas färdighet i hagel- och kulskytte.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 2. Verksamhet</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <h4>För att nå uppsatta mål ska Östgöta Jsk</h4>
+          <ul>
+            <li>bedriva aktiv jägarutbildning</li>
+            <li>informera om klubbens verksamhetsområde</li>
+            <li>utbilda skytteinstruktörer</li>
+            <li>
+              anordna tävlingar i enlighet med Svenska Sportskytteförbundets
+              bestämmelser
+            </li>
+            <li>stödja Jägarorganisationerna i jaktskyttefrågor</li>
+            <li>delta i samråd inom och utom egen organisation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 3. Medlemskap</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Klubben ska vara medlem i Jägarorganisationerna samt i Svenska
+              Sportskytteförbundet.
+            </li>
+            <li>
+              Fysisk person får efter anmälan hos Östgöta Jsk eller någon av de
+              klubbar som ingår i centrat bli antagen som medlem.
+            </li>
+            <li>
+              Medlem ska följa föreskrifterna i dessa stadgar och fullgöra sina
+              åtaganden gentemot jaktskytteklubben.
+            </li>
+            <li>
+              Medlemskap upphör om medlem begär utträde, om medlem inte betalar
+              föreskriven medlemsavgift eller blir utesluten ur någon del av
+              organisationen i enlighet med Svenska Sportskytteförbundets
+              stadgar.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 4. Medlemsavgift</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>Medlemsavgiftens storlek beslutas av ordinarie årsmöte.</li>
+            <li>
+              Hedersmedlem är befriad från medlemsavgift men har samma
+              rättigheter och skyldigheter som fullt betalande medlem.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 5. Verksamhetsår</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <h4>
+            Östgöta Jaktskytteklubbs verksamhets- och räkenskapsår ska vara
+            kalenderår.
+          </h4>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 6. Organisation</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <h4>
+            Högsta beslutande organ är årsmötet. Verkställande och förvaltande
+            organ är styrelsen.
+          </h4>
+        </div>
+      </div>
+
+      <h2>§ 7. Årsmöte</h2>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>Mom. 1. Årsmöte och extra årsmöte</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>Ordinarie årsmöte ska avhållas före utgången av mars månad.</li>
+            <li>
+              Kallelse till ordinarie årsmöte ska utfärdas av styrelsen och
+              kungöras senast 14 dagar före mötet på sätt som föregående årsmöte
+              beslutat.
+            </li>
+            <li>
+              Extra årsmöte ska hållas om styrelsen eller minst 1/3 av
+              medlemmarna så påkallar.
+            </li>
+            <li>
+              Kallelse till extra årsmöte kallas enligt bestämmelser för
+              ordinarie årsmöte.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>Mom. 2. Dagordning</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <h4>
+            Årsmötet öppnas av styrelsens ordförande eller, vid förfall för
+            denne, av den som styrelsen utsett. Årsmötet avslutas av ordföranden
+            för årsmötet. <br />
+            Vid ordinarie årsmöte ska följande ärenden förekomma:
+          </h4>
+          <ul class="numbers">
+            <li>Årsmötets öppnande.</li>
+            <li>Justering av röstlängden.</li>
+            <li>Val av ordförande för årsmötet.</li>
+            <li>Val av sekreterare för årsmötet.</li>
+            <li>
+              Val av två justerare tillika rösträknare som tillsammans med
+              mötesordföranden ska justera protokollet.
+            </li>
+            <li>Fråga om årsmötet blivit stadgeenligt utlyst.</li>
+            <li>Fastställande av dagordningen.</li>
+            <li>Styrelsens verksamhets- och förvaltningsberättelse.</li>
+            <li>Revisorernas berättelse.</li>
+            <li>Fastställande av balans- och resultaträkning.</li>
+            <li>Beslut om ansvarsfrihet för styrelsen.</li>
+            <li>Val av ordförande för ett år.</li>
+            <li>Val av ordinarie ledamöter och suppleanter till styrelsen.</li>
+            <li>Val av två revisorer och två revisorsuppleanter.</li>
+            <li>Val av valberedning.</li>
+            <li>Förslag till verksamhetsplan.</li>
+            <li>Styrelsens förslag till budget.</li>
+            <li>Beslut om avgifter för kommande verksamhetsår.</li>
+            <li>Behandling av motioner.</li>
+            <li>Fastställande av kallelse till nästa årsmöte.</li>
+            <li>Övriga frågor.</li>
+            <li>Utnämnande av hedersmedlem.</li>
+            <li>Mötets avslutande.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>Mom. 1. Årsmöte och extra årsmöte</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Närvarande medlemmar har en (1) röst. Talan och rösträtt för ej
+              närvarande ombud får utövas genom fullmakt. Närvarande ombud kan
+              endast ha en (1) fullmaktsröst.
+            </li>
+            <li>
+              Röstning vid val ska ske med slutna sedlar om något ombud begär
+              detta.
+            </li>
+            <li>
+              Som mötets beslut gäller den mening som erhåller högsta röstetal
+              utom i fråga där annat stadgas. För beslut fordras enkel majoritet
+              av de avgivna rösterna. Vid lika röstetal i ärende där röstning
+              sker öppet gäller den mening som biträds av tjänstgörande
+              ordförande under förutsättning att denne är medlem. Om röstetalet
+              vid röstning med slutna sedlar blir lika, avgörs ärendet genom
+              lottning.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>Mom. 4. Motioner och ärenden</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Motion som medlem önskar få behandlad vid ordinarie årsmöte ska
+              skriftligen avlämnas till styrelsen före utgången av februari
+              månad. Styrelsen ska med eget yttrande överlämna motionen till
+              årsmötet.
+            </li>
+            <li>Styrelsen kan lämna förslag till årsmötet.</li>
+            <li>
+              Vid extra årsmöte får endast ärende som angetts i kallelsen tas
+              upp till beslut.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>§ 8. Styrelsen</h2>
+
+      <p>
+        Förvaltningen av Östgöta Jaktskytteklubbs angelägenheter handhas av en
+        av årsmötet vald styrelse.
+      </p>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>Mom. 1. Styrelsens organisation</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Styrelsen ska bestå av ordförande och övriga ledamöter som i antal
+              fastställs av årsmötet.
+            </li>
+            <li>
+              Ordinarie årsmöte väljer årligen ordförande för ett år, halva
+              antalet övriga ledamöter för två år.
+            </li>
+            <li>
+              Styrelsen utser inom sig vice ordförande samt inom eller utom sig
+              sekreterare och kassör.
+            </li>
+            <li>
+              Styrelsen har rätt att till sig adjungera en eller flera personer.
+              Sådan adjungerad person har förslags- och yttranderätt men inte
+              rätt att delta i beslut.
+            </li>
+            <li>
+              Styrelsen utser inom eller utom sig personer som var och en för
+              sig eller i förening har rätt att teckna klubbens firma.
+            </li>
+            <li>
+              Styrelsen sammanträder efter kallelse av ordföranden eller av
+              honom utsedd person.
+            </li>
+            <li>Vid sammanträde skall protokoll föras.</li>
+            <li>
+              Styrelsen är beslutför då samtliga ledamöter är kallade och fler
+              än hälften av ledamöterna är närvarande vid sammanträdet. Som
+              beslut gäller den mening som de flesta ledamöterna förenat sig om.
+              Vid lika röstetal gäller den mening som biträds av tjänstgörande
+              ordförande.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>Mom. 2. Styrelsens åligganden</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <h4>
+            Styrelsen ska, förutom vad som sägs i dessa stadgar utfärdade
+            bestämmelser och föreskrifter, bland annat
+          </h4>
+          <ul>
+            <li>ansvara för lokala jaktskyttefrågor.</li>
+            <li>bereda ärenden som ska behandlas av årsmötet.</li>
+            <li>verkställa av årsmötet fattade beslut och uppdrag.</li>
+            <li>
+              ansvara för Östgöta Jsk:s tillgångar, arkiv och korrespondens.
+            </li>
+            <li>
+              avge verksamhetsberättelse med balans- och resultaträkning till
+              ordinarie årsmöte *utse delegater och suppleanter till Svenska
+              Sportskytteförbundets årsmöte.
+            </li>
+            <li>
+              senast den 1 mars avlämna styrelsens verksamhetsberättelse med
+              balans- och resultaträkningar till revisorerna.
+            </li>
+            <li>
+              upprätta program enligt Svenska Sportskytteförbundets riktlinjer
+              rörande tid och plats för tävlingar.
+            </li>
+            <li>i övrigt sköta Östgöta Jaktskytteklubbs angelägenheter.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 9. Räkenskaper och revision</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Östgöta Jaktskytteklubbs räkenskapsår sammanfaller med
+              kalenderåret.
+            </li>
+            <li>
+              Östgöta Jaktskytteklubbs balans- och resultaträkning och övrig
+              förvaltning ska årligen granskas av de av klubbens utsedda
+              revisorer.
+            </li>
+            <li>
+              Revisorer och revisorsuppleanter väljs för en tid av ett år.
+            </li>
+            <li>
+              Östgöta Jaktskytteklubbs räkenskaper ska tillsammans med
+              förvaltningsberättelse överlämnas till revisorerna senast den 1
+              mars.
+            </li>
+            <li>
+              Revisorernas berättelse ska ingå i de handlingar som, enligt § 7
+              mom.2, ska finnas tillgängliga före ordinarie årsmöte.
+            </li>
+            <li>
+              Ordinarie revisorer har rätt att begära att få närvara vid
+              styrelsens sammanträde när särskild anledning föreligger.
+            </li>
+            <li>
+              Ordinarie revisorer ska tillställas protokoll från styrelsens
+              sammanträden.
+            </li>
+            <li>
+              Det åligger revisorerna att verkställa vederbörlig revision och
+              därutöver avge berättelse samt till- eller avstyrka ansvarsfrihet
+              för styrelsen.
+            </li>
+            <li>
+              Revisorerna har rätt att om så anses behövligt utlysa extra
+              årsmöte.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 10. Valberedning</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Av årsmötet utsedd valberedning ska förbereda de val som
+              stadgemässigt ska ske vid ordinarie årsmöte.
+            </li>
+            <li>
+              Valberedningen ska bestå av tre ledamöter varav en sammankallande.
+              Mandatperioden för valda ledamöter är ett år. Sammankallande eller
+              av honom delegerad ledamot i valberedningen äger rätt att närvara
+              vid styrelsens sammanträden.
+            </li>
+            <li>
+              Sammankallande ska tillställas protokoll från styrelsens
+              sammanträden.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 11. Protokoll</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Protokoll ska föras vid årsmöte samt vid styrelsens sammanträden.
+              Protokoll ska återge de ärenden som behandlats och de beslut som
+              fattas och ska vara justerade av tjänstgörande ordförande och av
+              vald eller valda justerare. Protokollen ska vara tillgängliga för
+              medlemmar och arkiveras/förvaras på betryggande sätt.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 12. Disciplinärenden</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              För disciplinärenden och dessas handläggning gäller Svenska
+              Sportskytteförbundets stadgar.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 13. Force majeure</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Om Östgöta Jsk på grund av omständighet som klubben inte kunnat
+              råda över, såsom arbetskonflikt, myndighetsbeslut, naturkatastrof,
+              eldsvåda, fel eller försening i leveranser från leverantör eller
+              liknande omständigheter, inte kan genomföra evenemang inom sin
+              klubbverksamhet på sätt som planerats, är Östgöta Jsk inte skyldig
+              att återbetala erlagda avgifter som avser sådant evenemang.
+            </li>
+            <li>
+              Östgöta Jsk har således rätt att behålla del av eller hela den
+              avgift som inbetalats för icke genomfört evenemang till täckande
+              av uppkomna kostnader.
+            </li>
+            <li>
+              Östgöta Jsk:s beslut att behålla inbetald avgift kan överklagas
+              till Svensk Sportskytteförbundet. På motsvarande sätt har Östgöta
+              Jsk rätt att begära betalning av avgift för icke genomfört
+              evenemang av den som inte redan erlagt avgiften.
+            </li>
+            <li>
+              Östgöta Jsk svarar inte för skador eller direkta eller indirekta
+              kostnader som någon åsamkas på grund av icke genomfört evenemang.
+              Inte heller förtroendevald, tjänsteman eller funktionär inom
+              Östgöta Jsk som fattat beslut om sådant evenemang, svarar för
+              skador eller direkta eller indirekta kostnader.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 14. Stadgeändring</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Förslag till ändring av dessa stadgar ska senast före februari
+              månads utgång inges till styrelsen som däröver till årsmötet avger
+              yttrande. Beslut om ändring av stadgarna fattas av årsmötet.
+            </li>
+            <li>Beslut om ändring av stadgarna fattas av årsmötet.</li>
+            <li>
+              För sådant beslut krävs antingen att det biträds av ¾ av antalet i
+              beslutet deltagande medlemmar vid ett ordinarie årsmöte eller att
+              likalydande beslut fattas med enkel majoritet vid två på varandra
+              följande årsmöten, varav minst ett ska vara ordinarie.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reg-dropdown">
+        <span class="dropdown-span">
+          <h3>§ 15. Upphörande av Östgöta Jsk</h3>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        <div class="reg-content">
+          <ul>
+            <li>
+              Beslut att få upphöra som jaktskytteklubb fattas vid årsmöte.
+            </li>
+            <li>
+              För att beslut om upplösning ska vara giltigt ska detta ha fattats
+              av två på varandra följande årsmöten, varav minst ett ordinarie,
+              och på det senare årsmötet ha biträtts av minst ¾ av de röstande.
+            </li>
+            <li>
+              Upplöses Östgöta Jsk som förening skall klubbens tillgångar
+              överlämnas till Svenska Jägareförbundet, Jägarnas Riksförbund samt
+              Svenska Sportskytteförbundet jämt fördelat att användas på sätt
+              som det sista årsmötet beslutat i enlighet med dessa stadgars mål-
+              och verksamhetsparagrafer. Arkivet ska överlämnas till ÖLFA.
+            </li>
+            <li>Fastställt på årsmöte 11 mars 2007.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer starts -->
+    <footer>
+      <div class="footer-up">
+        <div class="main">
+          <h2 class="logo-footer">Östgöta Jaktskytteklubb</h2>
+          <p class="adress">
+            Kvarn 180 <br />
+            9132 Motala
+          </p>
+          <p class="email">
+            <a href="mailto:ostgotajsk@gmail.com">ostgotajsk@gmail.com</a>
+          </p>
+          <!-- <p class="phone">+46 7201 266 96</p> -->
+        </div>
+
+        <li>
+          <a href="#">
+            <span>Hem</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="#">tävlingsresultat</a></li>
+              <li><a href="#">Östgöta Jsk stadgar</a></li>
+              <li><a href="/about.html#klubbinfo">Klubbinfo</a></li>
+              <li>
+                <a
+                  href="https://www.skyttesport.se/globalassets/svenska-skyttesportforbundet/regler/sakb/sakb_2020.pdf"
+                  target="_blank"
+                  >SäkB</a
+                >
+              </li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <a href="/about.html"><span>Om</span></a>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="/about.html#meet">Styrmöten</a></li>
+              <li><a href="/about.html#member">Medlem</a></li>
+              <li><a href="/about.html#stadgar">Regler</a></li>
+              <li><a href="/about.html#funk">Funktionär</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="/banor.html">
+            <span>Banor</span>
+            <i class="dropdown-icon"></i>
+            <ul class="dropdown">
+              <li><a href="/banor.html#hyra">Hyra av bana</a></li>
+              <li><a href="/banor.html#intro">Inskjutningsbanan</a></li>
+              <li><a href="/banor.html#shot">Skjutbaneinstruktion</a></li>
+              <li><a href="/banor.html#banorsec">Banor på Östgöta Jsk</a></li>
+            </ul>
+          </a>
+        </li>
+      </div>
+
+      <div class="footer-down">
+        <p class="copyright">© 2022 Östgöta jsk</p>
+        <p class="author">
+          Designed & coded with ❤️ by
+          <a href="https://github.com/AbdullahMoubayed"> AbdullahM🏓</a>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

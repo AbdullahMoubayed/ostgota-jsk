@@ -1,5 +1,3 @@
-import './css/style.css';
-
 let listIcon = document.querySelector('.list-icon');
 let dropdownIcon = document.querySelectorAll('.dropdown-icon');
 let dropdownSpan = document.querySelectorAll('.dropdown-span');

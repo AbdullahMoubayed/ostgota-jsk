@@ -3,8 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Östgöta jsk</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!--- Navbar starts -->
+    <header class="controll">
+      <nav>
+        <div class="nav-wrappar">
+          <a class="logo-wrappar" href="/"
+            ><img class="logo" src="img/logo.png" alt="Östgöta JSK"
+          /></a>
+
+          <span id="nev-left">
+            <input type="button" value="Logga Ut" id="logout" />
+          </span>
+        </div>
+
+        <!--- Navbar body starts -->
+        <!-- Navbar body ends -->
+      </nav>
+    </header>
+    <!-- Navbar ends -->
+
+    <!--- Main starts -->
+    <section class="container">
+      <section class="panel">
+        <h3>Kontrollpanel</h3>
+        <ul>
+          <li class="active panel-btn event" onclick='openPanel("event")'>
+            <ion-icon name="newspaper-outline"></ion-icon>
+            <p>Händelse</p>
+          </li>
+          <li onclick='openPanel("tavlingarna")' class="tavlingarna panel-btn">
+            <ion-icon name="images-outline"></ion-icon>
+            <p>Gamla Tävlingar</p>
+          </li>
+          <li onclick='openPanel("tavling")' class="tavling panel-btn">
+            <ion-icon name="images-outline"></ion-icon>
+            <p>Tävlingar</p>
+          </li>
+          <a href="/update.html">
+            <li>
+              <ion-icon name="refresh-circle-outline"></ion-icon>
+              <p>updatera</p>
+            </li>
+          </a>
+        </ul>
+      </section>
+
+      <section class="content">
+        <section class="add">
+          <form class="add-form focus panel-nav" id="event">
+            <h2>Lägg Till En Händelse</h2>
+            <label for="title">Rubrik</label>
+            <input type="text" id="title" name="title" />
+
+            <label for="summary">sammanfattning</label>
+            <textarea type="text" id="summary" name="summary"> </textarea>
+
+            <span class="btns-span">
+              <input type="submit" value="Lägga till" />
+            </span>
+          </form>
+
+          <form id="tavlingarna" class="bild-form panel-nav"></form>
+
+          <form id="tavling" class="panel-nav">
+            <h2>Lägg Till En tävling</h2>
+            <label for="title">Rubrik</label>
+            <input type="text" id="title" name="title" />
+
+            <label for="location">Plats</label>
+            <input type="text" id="location" name="location" />
+
+            <label for="disc">Sammanfattning</label>
+            <textarea type="text" id="disc" name="disc"> </textarea>
+
+            <label for="junior">Junior</label>
+            <input type="text" id="junior_f" name="junior_f" />
+            <input type="text" id="junior_s" name="junior_s" />
+            <input type="text" id="junior_t" name="junior_t" />
+
+            <label for="lady">Dam</label>
+            <input type="text" id="lady_f" name="lady_f" />
+            <input type="text" id="lady_s" name="lady_s" />
+            <input type="text" id="lady_t" name="lady_t" />
+
+            <input
+              type="file"
+              name="image"
+              id="image"
+              multiple
+              accept="image/*"
+            />
+
+            <span class="btns-span">
+              <input type="submit" id="upload-btn" value="Lägga till" />
+            </span>
+          </form>
+
+          <form id="kalender" class="kalender-form panel-nav">
+            <h2>Lägg Till En händelse i kalendern</h2>
+            <label for="des">deskription</label>
+            <input type="text" id="des" name="des" />
+
+            <label for="des">Bilden</label>
+            <input type="file" name="fileToUpload" id="file-to-upload" />
+
+            <span class="btns-span">
+              <input type="submit" id="upload-btn" value="Lägga till" />
+            </span>
+          </form>
+        </section>
+      </section>
+    </section>
+
     <script>
       document.onreadystatechange = function () {
         if (document.readyState !== 'complete') {
@@ -31,117 +148,6 @@
         document.querySelector(`.${panelName}`).classList.add('active');
       }
     </script>
-  </head>
-  <body>
-    <div id="app"></div>
-
-    <!--- Navbar starts -->
-    <header>
-      <nav>
-        <div class="nav-wrappar">
-          <a class="logo-wrappar" href="/"
-            ><img class="logo" src="img/logo.png" alt="Östgöta JSK"
-          /></a>
-
-          <span id="nev-left">
-            <input type="button" value="Logga Ut" id="logout" />
-          </span>
-        </div>
-
-        <!--- Navbar body starts -->
-        <div class="nav-body">
-          <ul>
-            <li><a href="#">Hem</a></li>
-            <li class="dropdown-container">
-              <span> <a href="about.html">Om</a></span>
-              <ion-icon
-                class="dropdown-icon"
-                name="chevron-down-outline"
-              ></ion-icon>
-              <ul class="dropdown">
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">styrmöten</a></li>
-                <li><a href="#">öppettider</a></li>
-                <li><a href="#">regler</a></li>
-                <li><a href="#">gästbok</a></li>
-                <li><a href="#">säkB</a></li>
-              </ul>
-            </li>
-            <li class="dropdown-container">
-              <span>Banor</span>
-              <ion-icon
-                class="dropdown-icon"
-                name="chevron-down-outline"
-              ></ion-icon>
-              <ul class="dropdown">
-                <li><a href="#">none</a></li>
-                <li><a href="#">hihi</a></li>
-                <li><a href="#">varför</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!-- Navbar body ends -->
-      </nav>
-    </header>
-    <!-- Navbar ends -->
-
-    <!--- Main starts -->
-    <section class="container">
-      <section class="panel">
-        <h3>Kontrollpanel</h3>
-        <ul>
-          <li class="active panel-btn event" onclick='openPanel("event")'>
-            <ion-icon name="newspaper-outline"></ion-icon>
-            <p>Händelse</p>
-          </li>
-          <li onclick='openPanel("photo")' class="photo panel-btn">
-            <ion-icon name="images-outline"></ion-icon>
-            <p>Bilder</p>
-          </li>
-          <li>
-            <ion-icon name="people-circle-outline"></ion-icon>
-            <p>Användare</p>
-          </li>
-          <a href="/update.html">
-            <li>
-              <ion-icon name="refresh-circle-outline"></ion-icon>
-              <p>updatera</p>
-            </li>
-          </a>
-        </ul>
-      </section>
-
-      <section class="content">
-        <section class="add">
-          <form class="add-form focus panel-nav" id="event">
-            <h2>Lägg Till En Händelse</h2>
-            <label for="title">Rubrik</label>
-            <input type="text" id="title" name="title" />
-
-            <label for="summary">sammanfattning</label>
-            <input type="text" id="summary" name="summary" />
-            <span class="btns-span">
-              <input type="submit" value="Lägga till" />
-            </span>
-          </form>
-
-          <form id="photo" class="bild-form panel-nav">
-            <h2>Lägg Till En Bild</h2>
-            <label for="des">deskription</label>
-            <input type="text" id="des" name="des" />
-
-            <label for="des">Bilden</label>
-            <input type="file" name="fileToUpload" id="file-to-upload" />
-
-            <span class="btns-span">
-              <input type="submit" id="upload-btn" value="Lägga till" />
-            </span>
-          </form>
-        </section>
-      </section>
-    </section>
-
     <script type="module" src="/main.js"></script>
     <script type="module" src="../dist/bundle.js"></script>
     <script

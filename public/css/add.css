@@ -143,4 +143,65 @@ section.add form input[type='submit'] {
 section.add form input#file-to-upload {
   max-width: 21.4rem;
 }
+
+.update {
+  margin-left: -30rem !important;
+}
+
+.tavlingarna-item {
+  margin-bottom: 2rem;
+  border: 1.5px solid #204b45;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.tavlingarna-item h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tavlingarna-item .info {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tavlingarna-item .info p {
+  font-weight: 500;
+}
+
+.tavlingarna-item .info p:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.tavlingarna-item .results-container {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tavlingarna-item .results-container .result {
+  background: #f5f5f5;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.tavlingarna-item .results-container .result h4 {
+  font-weight: 500;
+}
+
+.tavlingarna-item .results-container .result:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.tavlingarna-item .summary {
+  margin-top: 1.5rem;
+  max-width: 30rem;
+}
+
+.controll {
+  position: fixed;
+}
 /*# sourceMappingURL=add.css.map */
